@@ -11,7 +11,7 @@ q = float(input('Insira a carga elétrica de q: '))
 # Criando variáveis para os prefixos das cargas
 mC = pow(10, -6)  # Microcoulomb
 nC = pow(10, -9)  # Nanocoulomb
-miliC = pow(10, -12)  # Milicoulomb
+miliC = pow(10, -3)  # Milicoulomb
 
 # Descobrindo o prefixo das cargas
 askprefixo = input('Em qual prefixo estão as cargas? (Responda micro, nano ou mili): ').lower() #CONVERTE O QUE FOI DIGITADO EM MINUSCULAS
