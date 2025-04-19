@@ -14,32 +14,34 @@ nanoColoumb = pow(10, -9)  # Nanocoulomb
 miliColoumb = pow(10, -3)  # Milicoulomb
 
 # Descobrindo o prefixo das cargas
-askprefixo = input('Em qual prefixo estão as cargas? (Responda micro, nano ou mili): ').lower() #CONVERTE O QUE FOI DIGITADO EM MINUSCULAS
+askprefixo = input(
+    'Em qual prefixo estão as cargas? (Responda micro, nano ou mili): ').lower()  # CONVERTE O QUE FOI DIGITADO EM MINUSCULAS
 
 if askprefixo == 'micro':
-    Q *= mC ##atualiza o valor de Q e q pela multiplicação deles pelo mC
-    q *= mC
+    Q *= microColoumb  ##atualiza o valor de Q e q pela multiplicação deles pelo mC
+    q *= microColoumb
 elif askprefixo == 'mili':
-    Q *= miliC ##atualiza o valor de Q e q pela multiplicação deles pelo miliC
-    q *= miliC
+    Q *= miliColoumb  ##atualiza o valor de Q e q pela multiplicação deles pelo miliC
+    q *= miliColoumb
 elif askprefixo == 'nano':
-    Q *= nC ##atualiza o valor de Q e q pela multiplicação deles pelo nanoC
-    q *= nC
+    Q *= nanoColoumb  ##atualiza o valor de Q e q pela multiplicação deles pelo nanoC
+    q *= nanoColoumb
 else:
     print("Prefixo não reconhecido. Usando o valor original das cargas.")
 
 distancia = float(input('Insira a distância entre os corpos: '))
 
-#variáveis para converter outras medidas em metro
+# variáveis para converter outras medidas em metro
 centimetros = pow(10, -1)
 milimetros = pow(10, -3)
-    
-askdistancia = str(input('Em qual medida está a distância ( Responda metros (m), centimentros(cm), milimetros(mm): ')).lower()
 
-if askdistancia == 'centimetros' or askdistancia == 'cm'
-distancia *= centimetros
-if askdistancia == 'miliimetros' or askdistancia == 'mm'
-distancia *= milimetros
+askdistancia = str(
+    input('Em qual medida está a distância ( Responda metros (m), centimentros(cm), milimetros(mm): ')).lower()
+
+if askdistancia == 'centimetros' or askdistancia == 'cm':
+    distancia *= centimetros
+if askdistancia == 'miliimetros' or askdistancia == 'mm':
+    distancia *= milimetros
 # Determinando a natureza da força (atração ou repulsão)
 Fnature = 'repulsão' if Q == q else 'atração'
 
@@ -48,4 +50,3 @@ F = k * abs(Q) * abs(q) / pow(distancia, 2)
 
 # Exibindo o resultado com no máximo duas casas decimais
 print(f'A intensidade da força de {Fnature} entre os corpos é de: {F:.2f} N')
-
