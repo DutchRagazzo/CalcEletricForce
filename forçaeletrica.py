@@ -49,4 +49,4 @@ Fnature = 'repulsão' if Q == q else 'atração'
 F = k * abs(Q) * abs(q) / pow(distancia, 2)
 
 # Exibindo o resultado com no máximo duas casas decimais
-print(f'A intensidade da força de {Fnature} entre os corpos é de: {F:.2f} N')
+print(f'A intensidade da força de {Fnature} entre os corpos é de: {F:.2f} Newtons')
