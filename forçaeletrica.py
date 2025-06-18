@@ -1,12 +1,12 @@
 #tive uma pequena ajuda do ChatGPT para descobrir meus erros em relação a multiplicação de Q e q pelos prefixos, futuramente irei adicionar a funcionalidade de converter as medidas de distancia caso não estiverem em metros.
 from math import pow
 
-print('Bem-vindo à calculadora de Força Elétrica!')
+print('Bem-vindo à calculadora de Forrrçaaaaaaaaaaaaaaaaaaaaa Eletrica!')
 
 k = 9 * pow(10, 9)  # Constante de Coulomb
 
-Q = float(input('Insira a carga elétrica de Q: '))
-q = float(input('Insira a carga elétrica de q: '))
+Q = float(input('Insira a carga elétrica de Quezão: '))
+q = float(input('Insira a carga elétrica de quezinho: '))
 
 # Criando variáveis para os prefixos das cargas
 microColoumb = pow(10, -6)  # Microcoulomb
