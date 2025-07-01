@@ -5,8 +5,8 @@ print('Bem-vindo à calculadora de Força Elétrica!')
 
 k = 9 * pow(10, 9)  # Constante de Coulomb
 
-Q = float(input('Insira o valor da carga elétrica Q (em Coloumb): '))
-q = float(input('Insira o valor da carga elétrica q (em Coloumb): '))
+Q = float(input('Insira o valor da carga elétrica Quezão (em Coloumb): '))
+q = float(input('Insira o valor da carga elétrica quezinho (em Coloumb): '))
 
 # Criando variáveis para os prefixos das cargas
 miliColoumb = pow(10, -3)  # Milicoulomb
