@@ -43,8 +43,10 @@ askdistancia = str(
 
 if askdistancia == 'centimetros' or askdistancia == 'cm':
     distancia *= centimetros
-if askdistancia == 'miliimetros' or askdistancia == 'mm':
+elif askdistancia == 'miliimetros' or askdistancia == 'mm':
     distancia *= milimetros
+else:
+      print("Distância não reconhecida. Usando valor original da distância.")
 # Determinando a natureza da força (atração ou repulsão)
 Fnature = 'repulsão' if Q == q else 'atração'
 
