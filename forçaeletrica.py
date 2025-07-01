@@ -1,7 +1,7 @@
 #tive uma pequena ajuda do ChatGPT para descobrir meus erros em relação a multiplicação de Q e q pelos prefixos, futuramente irei adicionar a funcionalidade de converter as medidas de distancia caso não estiverem em metros.
 from math import pow
 
-print('Bem-vindo à calculadora de Forrrçaaaaaaaaaaaaaaaaaaaaa Eletrica!')
+print('Bem-vindo à calculadora de Força Elétrica!')
 
 k = 9 * pow(10, 9)  # Constante de Coulomb
 
