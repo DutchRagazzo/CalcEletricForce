@@ -1,4 +1,4 @@
-#tive uma pequena ajuda do ChatGPT para descobrir meus erros em relação a multiplicação de Q e q pelos prefixos, futuramente irei adicionar a funcionalidade de converter as medidas de distancia caso não estiverem em metros.
+#tive uma pequena ajuda do ChatGPT para descobrir meus erros em relação a multiplicação de Q e q pelos prefixos;
 from math import pow
 
 print('Bem-vindo à calculadora de Força Elétrica!')
@@ -9,13 +9,13 @@ Q = float(input('Insira a carga elétrica de Quezão: '))
 q = float(input('Insira a carga elétrica de quezinho: '))
 
 # Criando variáveis para os prefixos das cargas
+miliColoumb = pow(10, -3)  # Milicoulomb
 microColoumb = pow(10, -6)  # Microcoulomb
 nanoColoumb = pow(10, -9)  # Nanocoulomb
-miliColoumb = pow(10, -3)  # Milicoulomb
-
+picoColoumb = pow(10, -12) # Picocoloumb
 # Descobrindo o prefixo das cargas
-askprefixo = input(
-    'Em qual prefixo estão as cargas? (Responda micro, nano ou mili): ').lower()  # CONVERTE O QUE FOI DIGITADO EM MINUSCULAS
+askprefixo = str(input('Em qual prefixo estão as cargas? (Responda micro, nano, mili ou pico): ')).lower()
+      # CONVERTE O QUE FOI DIGITADO EM MINUSCULAS
 
 if askprefixo == 'micro':
     Q *= microColoumb  ##atualiza o valor de Q e q pela multiplicação deles pelo mC
@@ -26,6 +26,9 @@ elif askprefixo == 'mili':
 elif askprefixo == 'nano':
     Q *= nanoColoumb  ##atualiza o valor de Q e q pela multiplicação deles pelo nanoC
     q *= nanoColoumb
+elif askprefixo == 'pico':
+    Q *= picoColoumb ##atualiza o valor de Q e q pela multiplicação deles pelo pico
+    q *= picoColoumb
 else:
     print("Prefixo não reconhecido. Usando o valor original das cargas.")
 
