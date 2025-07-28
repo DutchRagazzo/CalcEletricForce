@@ -7,9 +7,9 @@
   <li>1. Conversão de unidades de medida.</li> 
   <li>2. Potenciação com o método "pow".</li>
   <li>3. Leitura de Dados inseridos pelo usuário através do método "input".</li>
-  <li>4. Estruturas condicionais "if", "else" e "elif"</li>
+  <li>4. Estruturas condicionais "if", "else" e "elif".</li>
 </ul>
 <h2>Updates próximos!😎</h2>
-<p>Loop para as ações do programa e reforço nas condicionais></p>
+<p>Loop para as ações do programa e reforço nas condicionais</p>
 
 
